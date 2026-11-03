@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="app.css" />
+  <title>Grok Bot Desk</title>
+</head>
+<body>
+  <div id="app">
+    <header class="navbar"><span class="brand">Grok Bot ›</span><span id="paper-badge" class="pill orange">PAPER</span></header>
+    <main id="home">
+      <div class="balance" id="balance">$0.00</div>
+      <canvas id="home-chart" width="390" height="180"></canvas>
+      <p class="empty">Waiting for the first trade</p>
+    </main>
+    <nav class="tabbar">
+      <button data-tab="home">Home</button>
+      <button data-tab="agents">Agents</button>
+      <button data-tab="activity">Activity</button>
+      <button data-tab="account">Account</button>
+    </nav>
+  </div>
+  <script src="chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
